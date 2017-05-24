@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>瀑布流布局</title>
+		<style>
+			*{
+				border: 0;
+				margin: 0;
+				padding: 0;
+			}
+			html, body{
+				width: 100%;
+				height: auto;
+				font-size: 16px;
+				background: black;
+			}
+			.container{
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+				background: gray;
+			}
+			.waterfall{
+				column-count: 3;
+				-moz-column-count: 3;
+				-webkit-column-count: 3;
+				column-width: 25em;
+				-moz-column-width: 25em;
+				-webkit-column-width: 25em;
+				column-gap: 1em;
+				-moz-column-gap: 1em;
+				-webkit-column-gap: 1em;
+			}
+			.waterfall .waterfall-div{
+				background: white;
+				-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+				-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+				box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+				break-inside: avoid;
+				-moz-page-break-inside: avoid;
+				-webkit-column-break-inside: avoid;
+				padding: 1em;
+				margin: 0.5em 0.5em 1em 0.5em;
+			}
+			.waterfall .waterfall-div img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="waterfall">
+				<div class="waterfall-div">
+					<img src="images/one.jpg" alt="">
+					<p>1.《海贼王》是尾田荣一郎在《周刊少年JUMP》上连载的超人气漫画。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/two.jpg" alt="">
+					<p>2.“ONE PIECE”在故事中为“一个大秘宝”之意。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/three.jpg" alt="">
+					<p>3.传说中‘海贼王’哥尔·D·罗杰在死前说出他留下了具有财富、名声、力量世界第一的宝藏“ONE PIECE”，许多人为了争夺“ONE PIECE”，争相出海，许多海贼开始树立霸权，而形成了“大海贼时代”。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/four.jpg" alt="">
+					<p>4.十年后，蒙其·D·路飞为了要实现与因救他而断臂的四皇‘红发’香克斯的约定而出海，在遥远的路途上找寻着志同道合的伙伴，一起进入“伟大航道”，目标当上“海贼王”。。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/five.jpg" alt="">
+					<p>5.在风车岛出生的路飞因为遇到了海贼红发香克斯，因此一心想要做海贼王</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/six.jpg" alt="">
+					<p>6.17岁出的海，在海上先后遇见了想要做天下第一大剑豪的爱睡觉的卓洛，想要绘制世界地图的爱钱航海士娜美，想要做伟大的海上战士的胆小乌索普，要去ALL BLUE 的爱美女的厨师山治，可爱的医师驯鹿乔巴，厉害的御姐罗宾，喜欢说SUPPER的疯狂修船工弗兰奇，还有不死的骷髅布鲁克。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/seven.jpg" alt="">
+					<p>7.财富，名声，权力，曾经拥有世界上一切的“海贼王”哥尔·D·罗杰，在临死前留下了一句话，让全世界的人们，趋之若鹜奔向大海：“想要我的财宝吗？想要的话可以给你，去找吧！我把一切都放在那里了！”于是所有的人们开始起航，趋之若鹜的奔向大海，世界迎来了“大海贼时代”。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/eight.jpg" alt="">
+					<p>8.海贼王漫画在世界各地大受欢迎，至今还在连载中，在日本漫画周刊《周刊少年Jump》中占据人气榜的第一位。</p>
+				</div>
+				<div class="waterfall-div">
+					<img src="images/nine.jpg" alt="">
+					<p>9.集英社正式宣布，“海贼王”漫画第59集，已成为日本图书出版史上初版发行量最高的作品。初版发行量高达320万册。日本单行本的累积发行数量已达1亿9500万册以上，并在日本以外的二十多个国家发行。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
